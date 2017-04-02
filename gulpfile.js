@@ -50,9 +50,9 @@ gulp.task('sass', ['css-libs'], function(){
 gulp.task('css-libs', function(){
 	return gulp.src([
 		'src/libs/fancyBox/source/jquery.fancybox.css', // FancyBox
-		'src/libs/OwlCarousel/owl-carousel/owl.carousel.css', // OwlCarousel
-		'src/libs/OwlCarousel/owl-carousel/owl.theme.css', // OwlCarousel
-		'src/libs/OwlCarousel/owl-carousel/owl.transitions.css' // OwlCarousel
+		'src/libs/slick-carousel/slick/slick.css', // slick carousel
+		'src/libs/OwlCarousel/owl-carousel/owl.carousel.css', // slick carousel
+		'src/libs/slick-carousel/slick/slick-theme.css' // slick carousel
 		
 
 		// ...
@@ -74,7 +74,8 @@ gulp.task('css-libs', function(){
 gulp.task('libs-js', function() {
 	return gulp.src([
 		'src/libs/jquery/jquery-3.1.1.js', //jQuery
-		'src/libs/OwlCarousel/owl-carousel/owl.carousel.js', // jCarousel
+		'src/libs/slick-carousel/slick/slick.js', //slick carousel
+		'src/libs/OwlCarousel/owl-carousel/owl.carousel.min.js', //slick carousel
 		'src/libs/fancyBox/source/jquery.fancybox.js' // FancyBox
 
 

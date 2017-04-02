@@ -8,7 +8,7 @@
 
 1. HEADER
 	&__logoWrap
-	&__herroWrap
+	&__herro
 2. MAIN
 	userInfo
 	useInstructions
@@ -21,10 +21,76 @@
 
 /*1. HEADER*/
 /*==================================================*/
+
+
 .header{
-	
+	flex
+	&__logoWrap{
+		margin: auto;
+		flex-basis: 100%;
+		box-sizing: border-box;
+	}	
+	&__logo{
+		padding: 10px 0 7px 0;
+		margin: auto;
+		display: block;
+	}
 }
-/*height="82" width="278"*/
+
+.herro{
+	background: $accent;
+	padding: 10px 0;
+	flex-basis: 100%;
+	&__wrap{
+		height: 100%;
+		overflow: hidden;
+		border-radius: 7px;
+	}
+	&__slider{
+		flex-basis: 50%;
+		box-sizing: border-box;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: auto;
+		}
+		.owl-wrapper-outer{
+			position: relative;
+		}
+		.owl-controls{
+			position: absolute;
+			bottom: 3%;
+			left: 0;
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+		.owl-page{
+			display: inline-block;
+			margin: 5px;
+			z-index: 10;
+			bottom: 5%;
+			span{
+				display: block;
+				width: 10px;
+				height: 10px;
+				background-color: rgba(0,0,0,.5);
+				border-radius: 50%;
+				border: 1px solid rgba(0,0,0,.5);
+			}
+		}
+		.active{
+			span{
+				background-color: $accent;
+			}
+		}
+	}
+	&__form{
+		flex-basis: 50%;
+		box-sizing: border-box;
+	}
+}
+
 
 
 

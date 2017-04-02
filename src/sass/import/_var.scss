@@ -3,13 +3,22 @@
 /*colors*/
 $myGrayLight: #666;
 $myGray: #4e4e4e;
-$myOrange: #ffd40d;
+$accent: #ffd40d;
 
 
 .container{
   max-width: 960px;
   min-width: 320px;
+  width: 100%;
   margin: 0 auto;
+}
+
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
 }
 
 
