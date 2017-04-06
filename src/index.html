@@ -53,25 +53,182 @@
 	
 				<div class="herro__wrap flex">
 
-					<div class="herro__slider">
+					<div class="herro__slider slider">
 						<div>
-							<img src="img/slide1.jpg"  alt="">
+							<img src="img/slide1.jpg"  alt="picture">
 						</div>
 						<div>
-							<img src="img/slide2.jpg"  alt="">
+							<img src="img/slide2.jpg"  alt="picture">
 						</div>
 						<div>
-							<img src="img/slide3.jpg"  alt="">
+							<img src="img/slide3.jpg"  alt="picture">
 						</div>
 						<div>
-							<img src="img/slide4.jpg"  alt="">
+							<img src="img/slide4.jpg"  alt="picture">
 						</div>
 						
 					</div><!-- herro__slider  -->
 						
 						
-					<div class="herro__form flex">
-					
+					<div class="herro__form form flex">
+						
+
+						<h2 class="form__header">Join us now. It's FREE</h2>
+
+
+
+
+						<form class="form__form" action="" method="POST">
+						
+							<div class="form__forIAm flex form__divWrap">
+								
+								<p class="form__label">I am</p>
+
+								<div class="form__forIAmWrap flex" data-error="text">
+									
+									<div class="form__genderTablet flex">
+										<div class="form__girl"></div>
+										<div class="form__boy"></div>
+									</div>
+
+									
+									<p class="form__label_search">looking for</p>									
+
+
+									<div class="form__genderTablet flex">
+										<div class="form__girl"></div>
+										<div class="form__boy"></div>
+									</div>
+									
+								</div>
+
+							</div><!-- form__forIAm -->
+
+
+
+							<div class="form__forName flex form__divWrap">
+								
+								<label class="form__label" for="form__nameInput">Name</label>
+								
+								<input type="text" name="form__nameInput" id="form__nameInput" class="form__input">
+
+							</div><!-- form__forName -->
+
+
+
+							<div class="form__forAge flex form__divWrap">
+								<p class="form__label">Age</p>
+								<div class="form__ageWrap flex">
+
+									<ul class="form__input form__input_search form__input_date">
+										<li>
+											<ul class="form__input_submenu">
+												<li>
+													01
+												</li>
+												<li>
+													02
+												</li>
+												<li>
+													03
+												</li>
+											</ul>
+										</li>
+									</ul><!-- form__input_date -->
+
+
+									<ul class="form__input form__input_search form__input_month">
+										<li>
+											<ul class="form__input_submenu">
+												<li>Januar</li>
+												<li>Februar</li>
+												<li>March</li>
+											</ul>
+										</li>
+									</ul><!-- form__input_month -->
+
+
+									<ul class="form__input form__input_search form__input_year">
+										<li>
+											<ul class="form__input_submenu">
+												<li>1985</li>
+												<li>1986</li>
+												<li>1987</li>
+											</ul>
+										</li>
+									</ul><!-- form__input_year -->
+
+								</div><!-- form__ageWrap -->
+
+							</div><!-- form__forAge -->
+
+
+
+							<div class="form__forCity flex form__divWrap">
+								<p class="form__label">City</p>
+								<ul class="form__input form__input_search">
+									<li>
+										<ul class="form__input_submenu">
+											<li>
+													London
+											</li>
+											<li>
+													Paris
+											</li>
+											<li>
+													NewYork
+											</li>
+											<li>
+													Barsilona
+											</li>
+											<li>
+													Amsterdam
+											</li>
+										</ul>
+									</li>
+								</ul>
+
+							</div><!-- form__forCity -->
+							
+							<div class="form__forBox flex">
+
+								<div class="form__forCheckbox">
+										<label class="form__checkbox" for="meCool">
+										<input class="form__inputCheckbox" type="checkbox" name="meCool" id="meCool">
+										<span></span>
+										I’m cool
+									</label>
+									<label class="form__checkbox" for="lifeGood">
+										<input class="form__inputCheckbox" type="checkbox" name="lifeGood" id="lifeGood">
+										<span></span>
+										Life’s good
+									</label>	
+								</div><!-- form__forCheckbox -->
+
+
+								<div class="form__forRadio">
+									
+									<label class="form__radio" for="tee">
+										<input type="radio" name="drink" id="tee" value="tee">
+										<span></span>
+										Tee
+									</label>
+
+									<label class="form__radio" for="beer">
+										<input type="radio" name="drink" id="beer" value="beer">
+										<span></span>
+										Beer
+									</label>
+								</div><!-- form__forRadio -->
+
+							</div><!-- form__forBox -->
+							
+
+							<div class="form__forBtn">
+								<button class="form__btn" type='submit'>Start Now</button>
+							</div>
+
+						</form>
 					</div>
 
 				</div><!-- herro__wrap -->
@@ -200,6 +357,7 @@
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 <script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 <script src="js/main.min.js"></script>	
 
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->

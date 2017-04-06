@@ -20,6 +20,10 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+*:focus{
+      outline: none;
+}
+
 html {
   line-height: 1;
 }
