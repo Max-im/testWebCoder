@@ -1,13 +1,23 @@
+@import "./var";
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1280px) {
 
 
 /*1. HEADER*/
 /*==================================================*/
 
 
+.form .hint{
+	right: 30px;
+	&:before{
+    	left: 100%; 
+    	bottom: calc(50% - 6px); 
+    	border: 5px solid transparent; 
+    	border-left: 7px solid rgba(0,0,0,.5);
+	}
+}
 
 
 
@@ -55,6 +65,31 @@
 
 
 
+.herro{
+	padding: 20px 0 15px 0;
+	&__wrap{
+		height: 100%;
+		border-radius: 7px;
+	}
+	&__slider{
+		flex-basis: 100%;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	&__form{
+		flex-basis: 100%;
+		box-sizing: border-box;
+		background: #f8f8f8;
+		padding: 10px 20%;
+		text-align: left;
+		flex-direction: column;
+	}
+}
+
+
+
+
+
 
 /*2. MAIN*/
 /*==================================================*/
@@ -93,6 +128,26 @@
 /*==================================================*/
 
 
+.herro{
+	padding: 20px 0 15px 0;
+	&__wrap{
+		height: 100%;
+		border-radius: 7px;
+	}
+	&__slider{
+		flex-basis: 100%;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	&__form{
+		flex-basis: 100%;
+		box-sizing: border-box;
+		background: #f8f8f8;
+		padding: 10px 10%;
+		text-align: left;
+		flex-direction: column;
+	}
+}
 
 
 
@@ -130,6 +185,97 @@
 
 /*1. HEADER*/
 /*==================================================*/
+
+.herro{
+	padding: 20px 0 15px 0;
+	&__wrap{
+		height: 100%;
+		border-radius: 7px;
+	}
+	&__slider{
+		flex-basis: 100%;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	&__form{
+		flex-basis: 100%;
+		box-sizing: border-box;
+		background: #f8f8f8;
+		padding: 10px	;
+		text-align: left;
+		flex-direction: column;
+	}
+}
+
+
+
+
+.form{
+	&__header{
+		font-size: 30px;
+	}
+	&__label{
+		width: 100%;
+		text-align: center;
+		padding: 5px 0;
+	}
+	&__divWrap{
+		width: 100%;
+	}
+	.flex{
+		justify-content: center;
+
+	}
+	&__input{
+		margin: 0 3px;
+		width: 100%;
+		font-size: 14px;
+		&:first-child{
+			margin: 0 3px 0 0;
+		}
+		&:last-child{
+			margin: 0 0px 0 3px;
+		}
+		&_date{
+			width: 70px;
+			text-indent: 10px;
+		}
+		&_month{
+			width: 120px;
+			text-indent: 10px;
+		}
+		&_year{
+			width: 90px;
+			text-indent: 10px;
+		}
+	}
+	&__ageWrap{
+		width: 100%;
+	}
+	&__forBox{
+		margin: 0;
+	}
+	&__forBtn{
+		margin: 25px 0 0 0px;
+	}
+	&__btn{
+		font-size: 40px;
+		border-radius: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

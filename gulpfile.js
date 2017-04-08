@@ -20,7 +20,7 @@ var gulp 			= require('gulp'), // require Gulp
 // -----------------------------------------------------------------------
 
 gulp.task('sass', ['css-libs'], function(){
-	setTimeout(function(){ // gulp falls after @import changing without the statement
+	//setTimeout(function(){ // gulp falls after @import changing without the statement
 		return gulp.src('src/sass/style.scss')
 			.pipe(sass())
 			// .pipe(uncss({
@@ -39,7 +39,7 @@ gulp.task('sass', ['css-libs'], function(){
 			.pipe(rename({suffix: '.min'}))
 			.pipe(gulp.dest('src/css'))
 			.pipe(browserSync.reload({stream: true}))
-		}, 100);
+		//}, 100);
 });
 
 

@@ -9,8 +9,8 @@ $accent: #ffd40d;
 .container{
   max-width: 960px;
   min-width: 320px;
-  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 
@@ -19,12 +19,10 @@ $accent: #ffd40d;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: stretch;
+	box-sizing: border-box;
 }
 
 
-
-
-.errorText{}
 
 
 .error{
@@ -33,4 +31,32 @@ $accent: #ffd40d;
 	right: -30px;
 	top: 10px;
 	font-size: 28px !important;
+}
+
+
+
+
+.form .hint{
+	position: absolute;
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	width: 150px;
+	padding: 5px 0px;
+	background: rgba(0,0,0,.5);
+	right: -190px;
+	border-radius: 5px;
+	text-align: center;
+	display: none;
+	z-index: 150;
+	&:before{
+		content:'';
+		position: absolute; 
+		display: block;
+		width: 5px;
+    	left: -12px; 
+    	bottom: calc(50% - 6px); 
+    	border: 5px solid transparent; 
+    	border-right: 7px solid rgba(0,0,0,.5);
+	}
 }

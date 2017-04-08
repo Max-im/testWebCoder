@@ -42,49 +42,52 @@
 <header class="header flex">
 			
 
-		<div class="header__logoWrap flex">
-			<img src="img/logo.png" alt="WebWCoder Test Task" class="header__logo">
-		</div>
+	<div class="header__logoWrap flex">
+		<img src="img/logo.png" alt="WebWCoder Test Task" class="header__logo">
+	</div>
 
 
 
-	<div class="header__herro herro flex">
+	<div class="header__herro herro">
 		<div class="container">
 	
 				<div class="herro__wrap flex">
 
 					<div class="herro__slider slider">
+
 						<div>
 							<img src="img/slide1.jpg"  alt="picture">
 						</div>
+						
 						<div>
 							<img src="img/slide2.jpg"  alt="picture">
 						</div>
+
 						<div>
 							<img src="img/slide3.jpg"  alt="picture">
 						</div>
+						
 						<div>
 							<img src="img/slide4.jpg"  alt="picture">
 						</div>
 						
 					</div><!-- herro__slider  -->
 						
+					
+
 						
 					<div class="herro__form form flex">
 						
-
 						<h2 class="form__header">Join us now. It's FREE</h2>
-
-
 
 
 						<form class="form__form" action="" method="POST">
 						
-							<div class="form__forIAm flex form__divWrap">
+							<div class="form__forIAm flex form__divWrap" data-error="choose the gender">
 								
 								<p class="form__label">I am</p>
 
-								<div class="form__forIAmWrap flex" data-error="text">
+								<div class="form__forIAmWrap flex" >
 									
 									<div class="form__genderTablet flex">
 										<div class="form__girl"></div>
@@ -106,7 +109,7 @@
 
 
 
-							<div class="form__forName flex form__divWrap">
+							<div class="form__forName flex form__divWrap" data-error="type your name">
 								
 								<label class="form__label" for="form__nameInput">Name</label>
 								
@@ -116,7 +119,7 @@
 
 
 
-							<div class="form__forAge flex form__divWrap">
+							<div class="form__forAge flex form__divWrap" data-error="select birth date">
 								<p class="form__label">Age</p>
 								<div class="form__ageWrap flex">
 
@@ -164,9 +167,9 @@
 
 
 
-							<div class="form__forCity flex form__divWrap">
+							<div class="form__forCity flex form__divWrap" data-error="select your city">
 								<p class="form__label">City</p>
-								<ul class="form__input form__input_search">
+								<ul class="form__input form__input_search form__input_city">
 									<li>
 										<ul class="form__input_submenu">
 											<li>
@@ -229,7 +232,7 @@
 							</div>
 
 						</form>
-					</div>
+					</div><!-- herro__form -->
 
 				</div><!-- herro__wrap -->
 
