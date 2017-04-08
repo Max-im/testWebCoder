@@ -1,14 +1,14 @@
 INFO:
 --------------------------------------------------
 
-name        : testWebCoder;
-description : a test task;
-structure   : 
-	src  - rawProject;
-	dist - production;
+* name        : testWebCoder;
+* description : a test task;
+* structure   : 
+* 	src  - rawProject;
+* 	dist - production;
 
-version     : 1.0.0;
-author      : Pozhidaev Maksim;
+* version     : 1.0.0;
+* author      : Pozhidaev Maxim;
 
 
 
@@ -45,19 +45,4 @@ SCHEDULE:
 total time: __ hours;
 
 
-
-----------------------------------------|
-					|
-1. deploy the environment - 1 hour;	|
-2. header - ;				|
-3. main - 10 hours;			|
-     block1 - 3 hours;			|
-     block2 - 3 hours;			|
-     block3 - 3 hours;			|
-     block4 - 1 hour;			|
-4. make a footer - ;			|
-5. optimisation - 2 hours;		|	
-					|
-total time: __ hours;			|
-----------------------------------------|
 
