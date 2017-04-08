@@ -4,8 +4,8 @@ INFO:
 * name        : testWebCoder;
 * description : a test task;
 * structure   : 
-* - src  - rawProject;
-* - dist - production;
+ - src  - rawProject;
+ - dist - production;
 * version     : 1.0.0;
 * author      : Pozhidaev Maxim;
 
