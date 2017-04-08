@@ -47,7 +47,27 @@ $('.form__btn').on('click', submitForm);
 
 // 2. MAIN
 // -----------------------------------------
+$('.userList__carousel').owlCarousel({
+	items: 5,
+	itemsDesktop : [1199,5],
+	itemsDesktopSmall : [980,5],
+	itemsTablet: [768,5],
+	itemsMobile : [479,3],
+	autoPlay: false,
+	pagination: false,
+	navigation: true
+})
 
+
+$('.userList__link').css({
+	'font-size': 20
+});
+$('.owl-prev').empty().addClass('fa fa-arrow-left').css({
+	'font-size': 25
+});
+$('.owl-next').empty().addClass('fa fa-arrow-right').css({
+	'font-size': 25
+});
 
 
 
