@@ -30,7 +30,7 @@ $accent: #ffd40d;
 	position: absolute;
 	right: -30px;
 	top: 10px;
-	font-size: 28px !important;
+	font-size: 28px;
 }
 
 
@@ -38,13 +38,13 @@ $accent: #ffd40d;
 
 .form .hint{
 	position: absolute;
-	display: inline-block;
 	font-size: 14px;
 	color: #fff;
 	width: 150px;
-	padding: 5px 0px;
+	padding: 15px 0px;
 	background: rgba(0,0,0,.5);
-	right: -190px;
+	right: -155px;
+	top: -7px;
 	border-radius: 5px;
 	text-align: center;
 	display: none;
@@ -54,7 +54,7 @@ $accent: #ffd40d;
 		position: absolute; 
 		display: block;
 		width: 5px;
-    	left: -12px; 
+    	left: -17px; 
     	bottom: calc(50% - 6px); 
     	border: 5px solid transparent; 
     	border-right: 7px solid rgba(0,0,0,.5);
