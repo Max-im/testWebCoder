@@ -96,33 +96,17 @@ $('.tabs__link').on('click', switchTabs);
 // line.animate(1.0);
 
 
-
-$('.tabs__step').on('click', function(e){
-	
-	e.preventDefault();
-
-	let curentNumb = $(this).attr('data-number');
-
-
-	$('.tabs__step_active').removeClass('tabs__step_active');
-	$(this).removeClass('tabs__step_done').addClass('tabs__step_active');
-	
-
-	$('.tabs__step').each((key, val) => {
-		if(key+1 < curentNumb){
-			$(val).addClass('tabs__step_done');
-		}
-		else{
-			$(val).removeClass('tabs__step_done');
-		}
-	})
-});
-
 $('.tabs__step').each((key, val) => {
 	$(val).css({
 		'z-index': 10-key
 	})
-})
+});
+
+$('.tabs__step').on('click', stepClick);
+
+
+
+
 
 
 // useInstructions
@@ -454,6 +438,40 @@ function switchTabs(e){
 	$('.tabs__list').hide();
 	$(attrVal).show();
 	
+}
+
+
+
+function stepClick(e){
+	
+	e.preventDefault();
+
+	let curentNumb = $(this).attr('data-number');
+
+
+	$('.tabs__step_active').removeClass('tabs__step_active');
+	$(this).removeClass('tabs__step_done').addClass('tabs__step_active');
+	
+
+	$('.tabs__step').each((key, val) => {
+		if(key+1 < curentNumb){
+			$(val).addClass('tabs__step_done');
+		}
+		else{
+			$(val).removeClass('tabs__step_done');
+		}
+	})
+	changeProgressbarVal(curentNumb);
+}
+
+
+
+function changeProgressbarVal(num){
+	$('.tabs__progressState').animate({
+		'width': (num * 20)+'%'
+	}, 700);
+	
+	$('.tabs__progressVal').text(num*20);
 }
 
 
