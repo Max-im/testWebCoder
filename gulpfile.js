@@ -76,6 +76,7 @@ gulp.task('libs-js', function() {
 		'src/libs/jquery/jquery-3.1.1.js', //jQuery
 		'src/libs/slick-carousel/slick/slick.js', //slick carousel
 		'src/libs/OwlCarousel/owl-carousel/owl.carousel.min.js', //slick carousel
+		'src/libs/progressbar.min.js', //progress
 		'src/libs/fancyBox/source/jquery.fancybox.js' // FancyBox
 
 

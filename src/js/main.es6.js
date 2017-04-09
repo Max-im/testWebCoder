@@ -73,15 +73,56 @@ $('.owl-next').empty().addClass('fa fa-arrow-right').css({
 
 
 
-$('.tabs__link').on('click', switchTabs); 
-
-
 
 
 // userInfo
 // -----------------------------------------
+$('.tabs__link').on('click', switchTabs); 
 
 
+
+// let line = new ProgressBar.Line('.tabs__progressBar', {
+// 	strokeWidth: 4,
+// 	easing: 'easeInOut',
+// 	duration: 1400,
+// 	color: 'gray',
+// 	background: 'linear-gradient(0deg, #94c516 4%,#72aa00 50%, #8eb92a 51%, #a8c732 92%, #b9ce44 100%)',
+// 	trailColor: '',
+// 	trailWidth: 1,
+// 	svgStyle: {width: '100%', height: '100%'}
+// });
+
+
+// line.animate(1.0);
+
+
+
+$('.tabs__step').on('click', function(e){
+	
+	e.preventDefault();
+
+	let curentNumb = $(this).attr('data-number');
+
+
+	$('.tabs__step_active').removeClass('tabs__step_active');
+	$(this).removeClass('tabs__step_done').addClass('tabs__step_active');
+	
+
+	$('.tabs__step').each((key, val) => {
+		if(key+1 < curentNumb){
+			$(val).addClass('tabs__step_done');
+		}
+		else{
+			$(val).removeClass('tabs__step_done');
+		}
+	})
+});
+
+$('.tabs__step').each((key, val) => {
+	$(val).css({
+		'z-index': 10-key
+	})
+})
 
 
 // useInstructions
@@ -92,7 +133,6 @@ $('.tabs__link').on('click', switchTabs);
 
 // 3. FOOTER
 // -----------------------------------------
-
 
 
 
