@@ -60,7 +60,7 @@ $('.userList__carousel').owlCarousel({
 
 
 $('.userList__link').css({
-	'font-size': 20
+	'font-size': 18
 });
 $('.owl-prev').empty().addClass('fa fa-arrow-left').css({
 	'font-size': 25
@@ -68,6 +68,13 @@ $('.owl-prev').empty().addClass('fa fa-arrow-left').css({
 $('.owl-next').empty().addClass('fa fa-arrow-right').css({
 	'font-size': 25
 });
+
+
+
+
+
+$('.tabs__link').on('click', switchTabs); 
+
 
 
 
@@ -96,12 +103,20 @@ $('.owl-next').empty().addClass('fa fa-arrow-right').css({
 
 // FUNCTIONS
 // -----------------------------------------
+
+// ===============================================
+// header
+// ===============================================
+
 function addSearcElem(){
 	let inputElem = $('.form__input_search').children();
 	let  searchElem = 	`<span class="form__inputTarget"></span>
 						<span class="form__input_searchEl"></span>`;
 	$(inputElem).append(searchElem);
 }
+
+
+
 
 function dropSubmenu(){
 	let dropMenu = $(this).closest('.form__input').find('.form__input_submenu');
@@ -111,6 +126,8 @@ function dropSubmenu(){
 		openSubmenu(dropMenu);
 	}
 }
+
+
 
 function openSubmenu(dropMenu){
 	$(dropMenu).slideDown(500);
@@ -376,13 +393,28 @@ function submitForm(e){
 		})
 		
 	}
-
-
-
-
 }
 
 
+
+
+
+
+// ===============================================
+// tabs
+// ===============================================
+function switchTabs(e){
+	e.preventDefault();
+	
+	$('.tabs__link_active').removeClass('tabs__link_active')
+	$(this).addClass('tabs__link_active');
+
+
+	let attrVal = $(this).attr('href');
+	$('.tabs__list').hide();
+	$(attrVal).show();
+	
+}
 
 
 

@@ -479,27 +479,36 @@
 .userList{
 	padding: 0 20px 0 80px;
 	box-sizing: border-box;
-		position: relative;
-	&__carousel{
-		// overflow: hidden;
+	position: relative;
+	&_carousel{
+
 	}
 	&__item{
 		position: relative;
 		width: 70px;
 		height: 70px;
 		border: 1px solid rgba(0,0,0,.58);
-		// box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+		position: relative;
 		z-index: 1;
 		&:hover{
 			.userList__overlay{
 				display: block;
 			}
 		}
+		&:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;	
+			box-shadow: inset 0 0 5px rgba(0,0,0,.75);
+		}
 	}
 	&__img{
 		z-index: -1;
 		display: block;
-		box-shadow: inset 0 0 5px red;
+		// display: none;
 	}
 	&__overlay{
 		position: absolute;
@@ -543,6 +552,116 @@
 
 }
 
+
+
+
+
+
+.tabs{
+	margin: 30px 0 0 0;
+	width: 100%;
+	&__control{
+		display: flex;
+		position: relative;
+		justify-content: flex-start;
+		&:before{
+			content:'';
+			position: absolute;
+			display: block;
+			width: 20px;
+			height: 5px;
+			z-index: -1;
+			background: #ccc;
+			border-left: 1px solid $myGray;
+			bottom: -5px;
+		}
+	}
+	&__link{
+		color: $myGray;
+		padding: 5px 10px;
+		border: 1px solid $myGray;
+		border-bottom: none;
+		border-radius: 5px 5px 0 0;
+		background: #ccc;
+		position: relative;
+		font-family: "SourceSansProLight";
+		text-transform: capitalize;
+		&:last-child{
+			border-radius: 5px 10px 0 0;
+			// &:after{
+			// 	content:'';
+			// 	display: block;
+			// 	position: absolute;
+			// 	width: 30px;
+			// 	height: 25px;
+			// 	top: 0;
+			// 	right: -30px;
+			// 	border-radius: 0 0 0 50px;
+			// 	border-left: 1px solid $myGray;
+			// 	border-bottom: 1px solid $myGray;
+			// }
+		}
+		&_active{
+			background: #fff;
+			color: red;
+			position: relative;
+			&:after{
+				content:'';
+				width: 100%;
+				height: 5px;
+				background: #fff;
+				left: 0;
+				z-index: 1;
+				bottom: -3px;
+				position: absolute;
+
+			}
+		}
+	}
+	&__linkAmount{
+		position: relative;
+		padding:  3px 5px;
+		margin: 0 5px;
+		color: $myGray;
+		&:before{
+			content: '';
+			width: 1px;
+			top: 8px;
+			left: 0;
+			background: $myGray;
+			color: $myGray;
+			height: 50%;
+			line-height: 30px;
+			position: absolute;
+		}
+
+	}
+	&__content{
+		padding: 20px;
+		box-sizing: border-box;
+		border: 1px solid $myGray;
+		border-radius: 5px;
+		position: relative;
+		background: #fff;
+		&:before{
+			content:'';
+			display: block;
+			width: 100%;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			position: absolute;
+			box-shadow: 0 2px 3px rgba(0,0,0,1);
+		}
+	}
+	&__list{
+		display: none;
+		&_active{
+			display: block;
+		}
+	}
+}
 
 
 
