@@ -106,6 +106,41 @@ $('.tabs__step').on('click', stepClick);
 
 
 
+$('.tabs__mixerLimit').mousedown(function(e){
+	
+	let elem = $(this).closest('.tabs__mixerLimit');
+	let flag = true;
+	let position = elem.offset().left - elem.closest('.tabs__mixerWrap').offset().left;
+
+
+	let moveEl = function(newE){
+		elem.css({
+			'left': position + newE.pageX - e.pageX
+		});
+		
+	}
+
+	let moveOver = function(){
+		flag = false;
+	}
+
+	$(document).mousemove( function(e){
+		if(flag){
+			moveEl(e) 
+		}
+	});
+
+	elem.mouseup( moveOver );
+
+
+
+
+
+})
+
+
+
+
 
 
 
@@ -125,8 +160,6 @@ $('.tabs__step').on('click', stepClick);
 
 
 
-// FUNCTIONS
-// -----------------------------------------
 
 // ===============================================
 // header
@@ -470,7 +503,7 @@ function changeProgressbarVal(num){
 	$('.tabs__progressState').animate({
 		'width': (num * 20)+'%'
 	}, 700);
-	
+
 	$('.tabs__progressVal').text(num*20);
 }
 
