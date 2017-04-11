@@ -789,6 +789,12 @@
 	}
 	&__mixerState{
 		@extend .tabs__progressState;
+		left: auto;
+		position: absolute;
+		z-index: 0;
+		box-sizing: border-box;
+		height: calc(100% - 2px);
+		width: 100%;
 	}
 	&__mixerLimit{
 		position: absolute;
@@ -802,6 +808,7 @@
 		flex-wrap: nowrap;
 		cursor: pointer;
 		box-sizing: border-box;
+		z-index: 2;
 		&:before{
 			content:'';
 			display: block;
@@ -830,10 +837,10 @@
 			cursor: move;
 		}
 		&:first-child{
-			left: 0px;
+			left: -5px;
 		}
 		&:nth-child(2){
-			right: 0px;
+			right: -5px;
 			left: auto;
 		}
 		&Left{
