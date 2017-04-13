@@ -577,19 +577,28 @@
 		font-family: "SourceSansProLight";
 		text-transform: capitalize;
 		&:last-child{
-			border-radius: 5px 10px 0 0;
-			// &:after{
-			// 	content:'';
-			// 	display: block;
-			// 	position: absolute;
-			// 	width: 30px;
-			// 	height: 25px;
-			// 	top: 0;
-			// 	right: -30px;
-			// 	border-radius: 0 0 0 50px;
-			// 	border-left: 1px solid $myGray;
-			// 	border-bottom: 1px solid $myGray;
-			// }
+			border-radius: 5px 50px 0 0;
+			border-right: none;
+			padding-right: 10px;	
+			box-sizing: border-box;
+			z-index: 1;
+			&:before{
+				content:'';
+				display: block;
+				position: absolute;
+				width: 47px;
+				height: 25px;
+				top: 1px;
+				background: #fff;
+				left: 96%;
+				border-bottom: 1px solid #969696;
+				border-radius: 2px 50px;
+				z-index: 3;
+				cursor: auto;
+			}
+			&:after{
+				width: calc(100% + 13px);
+			}
 		}
 		&_active{
 			background: #fff;
@@ -606,6 +615,13 @@
 				position: absolute;
 
 			}
+			>.tabs__linkAmount{
+				&:after{
+					background: #fff;
+				}	
+
+			}
+
 		}
 	}
 	&__linkAmount{
@@ -613,6 +629,7 @@
 		padding:  3px 5px;
 		margin: 0 5px;
 		color: #969696;
+		z-index: -1;
 		&:before{
 			content: '';
 			width: 1px;
@@ -624,6 +641,16 @@
 			line-height: 30px;
 			position: absolute;
 		}
+		&:after{
+			content: '';
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			background: #f8f8f8;
+			bottom: 1px;
+			right: -25px;
+			z-index: -1;
+		}	
 
 	}
 	&__content{
@@ -655,7 +682,7 @@
 
 
 	&__processWrap{
-		display: felx;
+		display: flex;
 		justify-content: space-between;
 	}
 
@@ -872,8 +899,26 @@
 			}	
 		}
 	}
-
-
+	&__canvasWrap{
+		position: relative;
+		transform: rotate(-90deg);
+	}
+	&__canvasNumb{
+		position: absolute;
+		line-height: 90px;
+		width: 90px;
+		text-align: center;
+		left: 0;
+		top: 0;
+		font-size: 20px;
+		color: #666;
+		transform: rotate(90deg);
+		&:after{
+			content: '%';
+			position: relative;
+			left: -3px;
+		}
+	}
 
 
 
@@ -888,13 +933,27 @@
 
 
 	&__starsBlock{
-		width: 80px;
-		background: green;
+		width: 90px;
+		text-align: center;
+		display: flex;
+		align-items: flex-end;
+		flex-wrap: wrap;
+
 	}
 
 }
 
-
+.fa{
+	cursor: pointer;
+	&-star{
+		color: $accent;
+		text-shadow: 0 1px 1px #666;
+		&-emp{
+			text-shadow: 0 1px 1px #666;
+			color: #dcdcdc;
+		}
+	}
+}
 
 
 

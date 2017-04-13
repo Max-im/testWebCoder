@@ -80,22 +80,6 @@ $('.owl-next').empty().addClass('fa fa-arrow-right').css({
 $('.tabs__link').on('click', switchTabs); 
 
 
-
-// let line = new ProgressBar.Line('.tabs__progressBar', {
-// 	strokeWidth: 4,
-// 	easing: 'easeInOut',
-// 	duration: 1400,
-// 	color: 'gray',
-// 	background: 'linear-gradient(0deg, #94c516 4%,#72aa00 50%, #8eb92a 51%, #a8c732 92%, #b9ce44 100%)',
-// 	trailColor: '',
-// 	trailWidth: 1,
-// 	svgStyle: {width: '100%', height: '100%'}
-// });
-
-
-// line.animate(1.0);
-
-
 $('.tabs__step').each((key, val) => {
 	$(val).css({
 		'z-index': 10-key
@@ -107,6 +91,78 @@ $('.tabs__step').on('click', stepClick);
 
 
 $('.tabs__mixerLimit').mousedown( mixerMove );
+
+$('.tabs__mixerLimit').ondragstart = function() {
+	return false;
+};
+
+
+
+
+
+$('.tabs__starsWrap .fa').hover(
+	function(){
+		let thisNum = $(this).attr('data-key');
+		$(this).removeClass('fa-star-emp');
+	
+		$('.tabs__starsWrap .fa').each(( key, val ) => {
+		
+			if( key < thisNum ){
+
+				$(val).removeClass('fa-star-emp');
+			
+			}
+			else{
+
+				$(val).addClass('fa-star-emp');
+
+			}
+
+		});
+
+	},
+	function(){
+		
+	}
+);
+
+
+let canvasDeg = 360/100*37;
+
+
+var theCanvas = document.getElementById('canvas');
+if(theCanvas && theCanvas.getContext){
+	var ctx = theCanvas.getContext("2d");
+	theCanvas.width = 90;
+	theCanvas.height = 90;
+	if(ctx){
+
+		ctx.beginPath();
+		ctx.lineWidth = 15;
+		ctx.strokeStyle = '#dcdcdc';
+		ctx.arc(45, 45, 37, 1*Math.PI, 4*Math.PI);
+		ctx.stroke();
+		
+		var radians = ( Math.PI / 180 )*canvasDeg;
+		ctx.beginPath();
+		ctx.lineWidth = 15;
+		ctx.strokeStyle = '#ffd40d';
+		ctx.arc(45, 45, 37, 0, radians);
+		ctx.stroke();
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -517,8 +573,6 @@ function mixerMove(e){
 		})
 
 		stateWidth = parseFloat(lastEl.css('left')) - parseFloat(firstEl.css('left'));
-		console.log(`state - ${stateWidth - 5}`);
-		console.log(`all - ${maxWidth}`);
 	}
 
 
@@ -544,6 +598,8 @@ function mixerMove(e){
 
 	let moveOver = function(){
 		flag = false;
+		moveEl = null;
+		moveOver = null;
 	}
 
 	$(document).mousemove( function(e){
@@ -553,6 +609,8 @@ function mixerMove(e){
 	});
 
 	$(document).mouseup( moveOver );
+
+	
 }
 
 
