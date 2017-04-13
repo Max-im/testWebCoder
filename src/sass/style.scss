@@ -447,7 +447,7 @@
 /*==================================================*/
 
 .userInfo{
-	padding: 50px 0 0 0;
+	padding: 50px 0 20px 0;
 	width: 100%;
 	&__block{
 		width: 50%;
@@ -477,7 +477,7 @@
 		text-align: justify;
 		color: $myGray;
 		font-family: "SourceSansProLight";
-
+		line-height: 20px;
 	}
 	
 }
@@ -973,9 +973,134 @@
 
 
 
+
+
+
+
+// useInstructions
+/*==================================================*/
+
+
+
+.howTo{
+	&__columns{
+		columns: 3 auto;
+		column-gap: 30px;
+	}
+	&__textNote{
+		color: $myGray;
+		line-height: 20px;
+	}
+	&__q{
+		&_accent{
+			color: $accent;
+			line-height: 16px;
+			padding: 0 0 0 15px;
+			margin: 20px 0;
+			position: relative;
+			border-left: 5px solid $accent;
+		}
+		&_gray{
+			color: #999;
+			font-style: italic;
+			line-height: 16px;
+			margin: 0 20px;
+			position: relative;
+			&:before{
+				content: '\f10d';
+				font-family: 'fontAwesome';				
+				color: 18px;
+				position: absolute;
+				left: -20px;
+
+			}
+			&:after{
+				content: '\f10e';
+				font-family: 'fontAwesome';
+				color: 18px;
+				position: absolute;
+				right: -20px;
+			}
+		}
+	}
+	&__ordList{
+		margin: 20px 0;
+		line-height: 20px;
+		color: $myGray;
+		list-style: number inside; 
+	}
+	&__list{
+		margin: 3px 0;
+		color: #999;
+		font-size: 12px;
+		&In{
+			color: $myGray;
+			font-size: 16px;
+		}
+	}
+
+}
+
+.block{
+	&__link{
+		color: $accent;
+		&_more{
+			float: right;
+			padding: 30px 0;
+			&:before{
+				content:'\f0da';
+				font-family: 'fontAwesome';
+				padding: 0 5px 0 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 /*3. FOOTER*/
 /*==================================================*/
-/*height="33" width="112"*/
+
+.footer{
+	padding: 30px 0 0 0;
+	&__wrap{
+		padding: 15px 0;
+		border-top: 1px solid $myGray;
+		display: flex;
+		justify-content: space-between;
+
+	}
+	&__infoText{
+		text-align: right;
+		font-size: 20px;
+		color: $myGray;
+	}
+	&__mark{
+		color: #999;
+	}
+	&__year{
+		float: right;
+		font-size: 30px;
+		color: #999;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 
