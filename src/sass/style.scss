@@ -49,8 +49,6 @@
 		box-sizing: border-box;
 		border: 1px solid #cc8f0e;
 		box-shadow: 0 0 3px #cc8f0e;
-		height: 100%;
-		max-height: 466px;
 		position: relative;
 		z-index: 1;
 		&:before, &:after{
@@ -155,6 +153,7 @@
 		padding: 7px 0;
 		position: relative;
 		align-items: center;
+		box-sizing: border-box;
 		&:first-child{
 			z-index: 4;
 		}
@@ -424,6 +423,23 @@
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

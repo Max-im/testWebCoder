@@ -25,9 +25,19 @@
 /*2. MAIN*/
 /*==================================================*/
 
-
-
-
+.userInfo{
+	padding: 30px 0 20px 0;
+	&__block{
+		width: 100%;
+		padding: 0 50px 30px 50px;
+		
+	}
+}
+.tabs{
+	&__processBlock{
+		width: calc(100% - 200px);
+	}
+}
 
 
 /*3. FOOTER*/
@@ -94,6 +104,11 @@
 /*2. MAIN*/
 /*==================================================*/
 
+.tabs{
+	&__processBlock{
+		width: calc(100% - 150px);
+	}
+}
 
 
 
@@ -142,6 +157,7 @@
 	&__form{
 		flex-basis: 100%;
 		box-sizing: border-box;
+		flex-wrap: wrap;
 		background: #f8f8f8;
 		padding: 10px 10%;
 		text-align: left;
@@ -154,7 +170,16 @@
 
 /*2. MAIN*/
 /*==================================================*/
+.userList{
+	&__carousel{
+	}
+}
 
+.tabs{
+	&__processBlock{
+		width: calc(100% - 100px);
+	}
+}
 
 
 
@@ -201,9 +226,12 @@
 		flex-basis: 100%;
 		box-sizing: border-box;
 		background: #f8f8f8;
-		padding: 10px	;
+		padding: 10px;
+		height: 100%;
+		box-sizing: border-box;
 		text-align: left;
-		flex-direction: column;
+		flex-direction: row;
+		max-height: 100%;
 	}
 }
 
@@ -213,17 +241,27 @@
 .form{
 	&__header{
 		font-size: 30px;
+		margin: 5px 0;
+		text-align: center;
+		flex-basis: 100%;
 	}
-	&__label{
+	&__label:not(.form__label_search){
 		width: 100%;
 		text-align: center;
-		padding: 5px 0;
+		margin: 5px 0;
 	}
 	&__divWrap{
 		width: 100%;
+		text-align: center;
+		padding: 0 0 5px 0;
+	}
+	&__forIAmWrap{
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap !important;
 	}
 	.flex{
-		justify-content: center;
+		justify-content: space-between;
 
 	}
 	&__input{
@@ -284,8 +322,29 @@
 
 /*2. MAIN*/
 /*==================================================*/
+.codeThisBlock__img{
+	width: 150px;
+}
+.userList{
+	padding: 0 10px;
+}
+.userList__carouselWrap{
+	padding: 0 50px;
+}
 
-
+.tabs{
+	padding: 0 -40px;
+	&__processWrap{
+		flex-wrap: wrap;
+	}
+	&__processBlock{
+		width: 100%;
+	}
+	&__starsBlock{
+		margin: 20px auto 0 auto;
+		text-align: center;
+	}
+}
 
 
 

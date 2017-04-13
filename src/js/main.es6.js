@@ -49,9 +49,9 @@ $('.form__btn').on('click', submitForm);
 // -----------------------------------------
 $('.userList__carousel').owlCarousel({
 	items: 5,
-	itemsDesktop : [1199,5],
+	itemsDesktop : [1199,7],
 	itemsDesktopSmall : [980,5],
-	itemsTablet: [768,5],
+	itemsTablet: [768,4],
 	itemsMobile : [479,3],
 	autoPlay: false,
 	pagination: false,
