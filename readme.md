@@ -1,8 +1,7 @@
 STRUCTURE:
 --------------------------------------------------
-* structure   : 
-* -src  - rawProject;
-* -dist - production;
+* src  - rawProject;
+* dist - production;
 
 
 INFO:

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<head>
+
+	
+	<!-- meta -->
+	<meta charset="UTF-8" />
+	<meta name="description" content="" /> <!-- !!! -->
+	<meta http equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="Max Pozhidayev" /> 
+
+	<!-- info -->
+	<title>Test Task</title>
+	<link rel="shortcut icon" href="favicon.png" />
+	
+
+	<!-- links -->
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+	<link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.css" />
+
+
+
+	<!-- if block -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+
+<body>
+
+<div class="wrapper">	
+
+
+<!-- HEADER -->
+<!-- ================================================ -->
+<header class="header flex">
+			
+
+	<div class="header__logoWrap flex">
+		<img src="img/logo.png" alt="WebWCoder Test Task" class="header__logo">
+	</div>
+
+
+
+	<div class="header__herro herro">
+
+		<div class="container">
+	
+			<div class="herro__wrap flex">
+
+				<div class="herro__slider slider">
+
+					<div>
+						<img src="img/slide1.jpg"  alt="picture">
+					</div>
+					
+					<div>
+						<img src="img/slide2.jpg"  alt="picture">
+					</div>
+
+					<div>
+						<img src="img/slide3.jpg"  alt="picture">
+					</div>
+					
+					<div>
+						<img src="img/slide4.jpg"  alt="picture">
+					</div>
+					
+				</div><!-- herro__slider  -->
+					
+				
+
+					
+				<div class="herro__form form flex">
+					
+					<h2 class="form__header">Join us now. It's FREE</h2>
+
+
+					<form class="form__form" action="" method="POST">
+					
+						<div class="form__forIAm flex form__divWrap" data-error="choose the gender">
+							
+							<p class="form__label">I am</p>
+
+							<div class="form__forIAmWrap flex" >
+								
+								<div class="form__genderTablet flex">
+									<div class="form__girl"></div>
+									<div class="form__boy"></div>
+								</div>
+
+								
+								<p class="form__label_search">looking for</p>									
+
+
+								<div class="form__genderTablet flex">
+									<div class="form__girl"></div>
+									<div class="form__boy"></div>
+								</div>
+								
+							</div>
+
+						</div><!-- form__forIAm -->
+
+
+
+						<div class="form__forName flex form__divWrap" data-error="type your name">
+							
+							<label class="form__label" for="form__nameInput">Name</label>
+							
+							<input type="text" name="form__nameInput" id="form__nameInput" class="form__input">
+
+						</div><!-- form__forName -->
+
+
+
+						<div class="form__forAge flex form__divWrap" data-error="select birth date">
+							<p class="form__label">Age</p>
+							<div class="form__ageWrap flex">
+
+								<ul class="form__input form__input_search form__input_date">
+									<li>
+										<ul class="form__input_submenu">
+											<li>
+												01
+											</li>
+											<li>
+												02
+											</li>
+											<li>
+												03
+											</li>
+										</ul>
+									</li>
+								</ul><!-- form__input_date -->
+
+
+								<ul class="form__input form__input_search form__input_month">
+									<li>
+										<ul class="form__input_submenu">
+											<li>Januar</li>
+											<li>Februar</li>
+											<li>March</li>
+										</ul>
+									</li>
+								</ul><!-- form__input_month -->
+
+
+								<ul class="form__input form__input_search form__input_year">
+									<li>
+										<ul class="form__input_submenu">
+											<li>1985</li>
+											<li>1986</li>
+											<li>1987</li>
+										</ul>
+									</li>
+								</ul><!-- form__input_year -->
+
+							</div><!-- form__ageWrap -->
+
+						</div><!-- form__forAge -->
+
+
+
+						<div class="form__forCity flex form__divWrap" data-error="select your city">
+							<p class="form__label">City</p>
+							<ul class="form__input form__input_search form__input_city">
+								<li>
+									<ul class="form__input_submenu">
+										<li>
+												London
+										</li>
+										<li>
+												Paris
+										</li>
+										<li>
+												NewYork
+										</li>
+										<li>
+												Barsilona
+										</li>
+										<li>
+												Amsterdam
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+						</div><!-- form__forCity -->
+						
+						<div class="form__forBox flex">
+
+							<div class="form__forCheckbox">
+								
+								<label class="form__checkbox" for="meCool">
+									<input class="form__inputCheckbox" type="checkbox" name="meCool" id="meCool">
+									<span></span>
+									I’m cool
+								</label>
+
+								<label class="form__checkbox" for="lifeGood">
+									<input class="form__inputCheckbox" type="checkbox" name="lifeGood" id="lifeGood">
+									<span></span>
+									Life’s good
+								</label>	
+
+							</div><!-- form__forCheckbox -->
+
+
+							<div class="form__forRadio">
+								
+								<label class="form__radio" for="tee">
+									<input type="radio" name="drink" id="tee" value="tee">
+									<span></span>
+									Tee
+								</label>
+
+								<label class="form__radio" for="beer">
+									<input type="radio" name="drink" id="beer" value="beer">
+									<span></span>
+									Beer
+								</label>
+
+							</div><!-- form__forRadio -->
+
+						</div><!-- form__forBox -->
+						
+
+						<div class="form__forBtn">
+							<button class="form__btn" type='submit'>Start Now</button>
+						</div>
+
+					</form>
+
+				</div><!-- herro__form -->
+
+			</div><!-- herro__wrap -->
+
+		</div><!-- container -->
+
+	</div><!-- header__herroWrap herroWrap -->
+
+
+</header>
+	
+
+
+
+
+	
+<!-- MAIN -->
+<!-- ================================================ -->
+<main class="main">
+
+	<div class="container flex">
+
+		<div class="userInfo flex">
+			
+			<section class="userInfo__codeThisBlock codeThisBlock userInfo__block block">
+				
+				<h3 class="block__header">Code this block </h3>
+
+				<div class=" codeThisBlock__content ">
+
+					<img class="codeThisBlock__img" src="img/userPhoto.png" alt="user photo">
+					
+					<p class="codeThisBlock__textNote">This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. We </p>
+
+				</div>
+
+			</section>
+
+
+
+
+			<section class="userList  userInfo__block block">
+
+				<h3 class="block__header">User List</h3>
+
+				<div class="userList__carouselWrap">
+
+					<div class="userList__carousel carousel">
+						
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="userList__item">
+							<img class="userList__img" src="img/girlPhoto.jpg" alt="user photo">
+							<div class="userList__overlay">
+								<p class="userList__linkText">SexyGirl</p>
+								<a href="#" class="fa fa-smile-o userList__link">
+									
+								</a>
+								<a href="#" class="fa fa-user-plus userList__link">
+									
+								</a>
+							</div>
+						</div>
+					
+					</div><!-- userList__carousel -->
+
+				</div><!-- tabs__carouselWrap -->
+
+
+
+				<div class="userList__tabs tabs">
+					
+					<div class="tabs__control">
+						
+						<a class="tabs__link" href="#tabs__list1">
+							User list
+						</a>
+						
+						<a class="tabs__link tabs__link_active" href="#tabs__list2">
+							active list tab <span class="tabs__linkAmount">38</span>
+						</a>
+
+					</div>
+					
+					<div class="tabs__content">
+
+						<div class="tabs__list" id="tabs__list1">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo alias, cum, cumque molestiae ipsam non minus porro ex ullam dolore adipisci unde sequi quaerat eius architecto consequatur ab vel recusandae.
+						</div>
+
+
+						<div class="tabs__list tabs__list_active" id="tabs__list2">
+							
+							<div class="tabs__processWrap">
+
+								<div class="tabs__processBlock">
+									
+									<div class="tabs__progressBar">
+										<span class="tabs__progressVal">60</span>
+										<div class="tabs__progressState"></div>
+									</div>
+
+
+									
+									<div class="tabs__steps">
+										<a href="#" class="tabs__step tabs__step_done" 
+										data-number="1">
+											step 1
+										</a>
+										<a href="#" class="tabs__step tabs__step_done" 
+										data-number="2">
+											step 2
+										</a>
+										<a href="#" class="tabs__step tabs__step_active" 
+										data-number="3">
+											step 3
+										</a>
+										<a href="#" class="tabs__step" 
+										data-number="4">
+											step 4
+										</a>
+										<a href="#" class="tabs__step" 
+										data-number="5">
+											step 5
+										</a>
+									</div><!-- tabs__steps -->
+
+
+
+									<div class="tabs__mixerWrap">
+										
+										<div class="tabs__mixerLimit tabs__mixerLimit_min" >
+
+											<div class="tabs__mixerLimitLeft"></div>
+											<div class="tabs__mixerLimitRight"></div>
+
+										</div>
+
+
+										<div class="tabs__mixerLimit tabs__mixerLimit_max" >
+
+											<div class="tabs__mixerLimitLeft"></div>
+											<div class="tabs__mixerLimitRight"></div>
+
+										</div>
+
+
+										<div class="tabs__mixerState"></div>
+
+									</div><!-- tabs__mixerWrap -->
+
+
+								</div><!-- tabs__processBlock -->
+								
+
+								<div class="tabs__starsBlock">
+									
+									<div class="tabs__canvasWrap">
+										<div class="tabs__canvasNumb">
+											37
+										</div>
+										
+										<canvas id="canvas">
+											Your browser does not support canvas
+										</canvas>
+
+									</div>
+
+									<div class="tabs__starsWrap">
+									
+										<i data-key="1" class="fa fa-star" aria-hidden="true"></i>
+										<i data-key="2" class="fa fa-star" aria-hidden="true"></i>
+										<i data-key="3" class="fa fa-star fa-star-emp" aria-hidden="true"></i>
+										<i data-key="4" class="fa fa-star fa-star-emp" aria-hidden="true"></i>
+										<i data-key="5" class="fa fa-star fa-star-emp" aria-hidden="true"></i>
+
+									</div>
+
+								</div><!-- tabs__starsBlock -->
+
+
+							</div>
+
+						</div><!-- #tabs__list2 -->
+
+					</div><!-- tabs__content -->
+
+				</div><!-- userList__tabs -->
+				
+			</section><!-- userList -->
+
+		</div><!-- userInfo block -->
+
+
+
+		<div class="useInstructions">
+			
+			<section class="howTo block">
+				
+				<h3 class="block__header">How to succeed in online dating</h3>
+
+				<div class="howTo__columns">
+
+					<p class="howTo__textNote">
+						There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.
+					</p>
+					
+					<blockquote class="howTo__q howTo__q_accent">
+						In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on you
+					</blockquote>
+					
+					<p class="howTo__textNote">
+						You can also upload photos to your dating profile from your Facebook account
+					</p>
+					
+					<ol class="howTo__ordList">
+						<li class="howTo__list">
+							<span class="howTo__listIn">
+								Access your dating life even when you’re not browsing <a class="block__link" target="_blank" href="#">Cupid.com</a>!
+							</span>
+						</li>
+						<li class="howTo__list">
+							<span class="howTo__listIn">
+								Search for new matches from your browser easily
+							</span>				
+						</li>
+						<li class="howTo__list">
+							<span class="howTo__listIn">
+								Read and write messages  chat with members live; receive Datecasts, winks and alerts when your  are online or have updated their profile info
+							</span>
+						</li>
+						<li class="howTo__list">
+							<span class="howTo__listIn">
+								Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends
+							</span>
+						</li>
+					</ol>
+					
+					<blockquote class="howTo__q howTo__q_gray">
+						In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.
+					</blockquote>
+					
+					<a class="block__link block__link_more" href="#" >Click here to view more</a>
+				
+				</div><!-- howTo__columns -->
+
+
+			</section><!-- howTo block -->
+
+
+		</div><!-- useInstructions -->
+
+	</div> <!-- container -->
+</main>
+	
+	
+
+<!-- FOOTER -->
+<!-- ================================================ -->
+<footer class="footer">
+	<div class="container">
+		
+		<div class="footer__wrap">
+			
+			<img class="footer__logo" src="img/logoBottom.png" alt="WebWCoder Test Task">
+			
+			
+			
+			<div class="footer__info">
+			
+				<p class="footer__infoText">
+					<em class="footer__mark">VD</em>
+					Web Coder Test Task
+				</p>
+			
+				<time class="footer__year">2013</time>
+			
+			</div><!-- footer__info -->
+			
+		</div><!-- footer__wrap -->
+
+	</div><!-- container -->
+</footer>
+
+</div> <!-- wrapper -->
+
+
+<!-- ================================================
+		SCRIPTS
+================================================ -->
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="js/main.min.js"></script>	
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
