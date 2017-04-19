@@ -993,15 +993,15 @@
 	}
 	&__q{
 		&_accent{
-			color: $accent;
+			color: #ffa352;
 			line-height: 16px;
 			padding: 0 0 0 15px;
 			margin: 20px 0;
 			position: relative;
-			border-left: 5px solid $accent;
+			border-left: 5px solid #ffa352;
 		}
 		&_gray{
-			color: #999;
+			color: #9a9a9a;
 			font-style: italic;
 			line-height: 16px;
 			margin: 0 20px;
@@ -1031,7 +1031,7 @@
 	}
 	&__list{
 		margin: 3px 0;
-		color: #999;
+		color: #9a9a9a;
 		font-size: 12px;
 		&In{
 			color: $myGray;
@@ -1043,7 +1043,7 @@
 
 .block{
 	&__link{
-		color: $accent;
+		color: #ffa352;
 		&_more{
 			float: right;
 			padding: 30px 0;
@@ -1084,12 +1084,12 @@
 		color: $myGray;
 	}
 	&__mark{
-		color: #999;
+		color: #9a9a9a;
 	}
 	&__year{
 		float: right;
 		font-size: 30px;
-		color: #999;
+		color: #9a9a9a;
 	}
 }
 

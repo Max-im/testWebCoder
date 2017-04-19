@@ -30,15 +30,15 @@ USED:
 SCHEDULE:
 --------------------------------------------------
 
-1. deploy the environment - 1 hour;
+1. deploy the environment - 2 hours;
 2. slider - 6 hours (tried make a own one, but it could take too many time);
 3. form - 15 hours;
-4. userInfoBlock - 10 hours ;
-5. columnsBlock - ;
-6. footer - ;
+4. userInfoBlock - 17 hours ;
+5. columnsBlock - 3 hours;
+6. footer - 1 hour;
 7. optimisation - 2 hours;
 
-total time: __ hours;
+total time: 40 hours;
 
 
 
