@@ -14,7 +14,6 @@ var gulp 			= require('gulp'), // require Gulp
 	debug 			= require('gulp-debug'), //require gulp-debug (for print actions in console)
 	autoprefixer 	= require('gulp-autoprefixer'); // require gulp-autoprefixer (for adding prefixes)
 
-
 // -----------------------------------------------------------------------
 // sass
 // -----------------------------------------------------------------------
@@ -50,8 +49,8 @@ gulp.task('sass', ['css-libs'], function(){
 gulp.task('css-libs', function(){
 	return gulp.src([
 		'src/libs/fancyBox/source/jquery.fancybox.css', // FancyBox
-		'src/libs/slick-carousel/slick/slick.css', // slick carousel
-		'src/libs/OwlCarousel/owl-carousel/owl.carousel.css', // slick carousel
+		'src/libs/jquery-ui/jquery-ui.min.css', // jqueryui
+		'src/libs/OwlCarousel/owl-carousel/owl.carousel.css', // owl carousel
 		'src/libs/slick-carousel/slick/slick-theme.css' // slick carousel
 		
 
@@ -74,7 +73,7 @@ gulp.task('css-libs', function(){
 gulp.task('libs-js', function() {
 	return gulp.src([
 		'src/libs/jquery/jquery-3.1.1.js', //jQuery
-		'src/libs/slick-carousel/slick/slick.js', //slick carousel
+		'src/libs/jquery-ui/jquery-ui.min.js', //jqueryui
 		'src/libs/OwlCarousel/owl-carousel/owl.carousel.min.js', //slick carousel
 		'src/libs/progressbar.min.js', //progress
 		'src/libs/fancyBox/source/jquery.fancybox.js' // FancyBox

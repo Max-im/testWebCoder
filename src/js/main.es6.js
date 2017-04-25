@@ -1,9 +1,10 @@
+
 (function($) {
+
 
 // 1. HEADER
 // -----------------------------------------
 	
-
 
 
 // &__logoWrap
@@ -90,7 +91,6 @@ $('.tabs__step').on('click', stepClick);
 
 
 
-$('.tabs__mixerLimit').mousedown( mixerMove );
 
 $('.tabs__mixerLimit').ondragstart = function() {
 	return false;
@@ -125,6 +125,26 @@ $('.tabs__starsWrap .fa').hover(
 		
 	}
 );
+
+
+
+
+
+
+// ===============================================
+// mixer
+// ===============================================
+$( ".tabs__mixerWrap" ).slider({
+	range: true,
+	min: 0,
+	max: 100,
+	values: [ 10, 90 ]
+});
+
+$('.ui-slider-handle').append('<span class="mixerLeftPart"></span><span class="mixerRightPart"></span>')
+
+
+
 
 
 let canvasDeg = 360/100*37;
@@ -536,83 +556,14 @@ function changeProgressbarVal(num){
 
 
 
+  
 
 
 
-// ===============================================
-// mixer
-// ===============================================
-function mixerMove(e){
-	
-	let elem = $(this).closest('.tabs__mixerLimit');
-	let flag = true;
-	let position = parseFloat(elem.css('left'));
-	let maxWidth = elem.closest('.tabs__mixerWrap').width();
-	let state = $('.tabs__mixerState');
-	let firstEl = $('.tabs__mixerLimit_min');
-	let lastEl = $('.tabs__mixerLimit_max');
-	let myLeft;
-	let stateWidth;
 
 
-	let moveEl = function(newE){
-		myLeft = position + newE.pageX - e.pageX;
-		
-		checkLeftPosition();
-		changeStateWidth();
-
-		elem.css({
-			'left': myLeft
-		});
-			
-	}
-
-	let changeStateWidth = function(){
-		state.css({
-			'left': parseFloat(firstEl.css('left')) + 5,
-			'width': parseFloat(lastEl.css('left')) - parseFloat(firstEl.css('left'))
-		})
-
-		stateWidth = parseFloat(lastEl.css('left')) - parseFloat(firstEl.css('left'));
-	}
 
 
-	let checkLeftPosition = function(){
-		if(elem.hasClass('tabs__mixerLimit_min')){
-			if(myLeft > parseFloat(lastEl.css('left')) - 15){
-				myLeft = (parseFloat(lastEl.css('left')) - 15);
-			}
-		}else{
-			if(myLeft < parseFloat(firstEl.css('left')) + 15){
-				myLeft = (parseFloat(firstEl.css('left')) + 15);
-			}
-		}
-
-		if(myLeft < 0){
-			myLeft = -5;
-		}
-		if(myLeft > maxWidth){
-			myLeft = maxWidth;
-		}
-	}
-
-
-	let moveOver = function(){
-		flag = false;
-		moveEl = null;
-		moveOver = null;
-	}
-
-	$(document).mousemove( function(e){
-		if(flag){
-			moveEl(e) 
-		}
-	});
-
-	$(document).mouseup( moveOver );
-
-	
-}
 
 
 

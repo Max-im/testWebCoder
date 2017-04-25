@@ -1,5 +1,5 @@
 {
-  "name": "dropAndDragGame",
+  "name": "test",
   "description": "",
   "main": "index.js",
   "authors": [
@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "jquery": "latest",
+    "jqueryui": "latest",
     "fancybox": "^2.1.5",
     "slick-carousel": "https://github.com/kenwheeler/slick.git#^1.6.0"
   }
