@@ -446,6 +446,7 @@ function submitForm(e){
 		$('.fa-times').css({
 			'position': 'absolute',
 			'right': -30,
+			'top': 10,
 			'display':'block',
 			'color': 'red',
 			'font-size': 30

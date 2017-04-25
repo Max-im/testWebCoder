@@ -182,8 +182,12 @@
 }
 
 
-
-
+.howTo{
+	&__columns{
+		columns: 2 auto;
+		column-gap: 20px;
+	}
+}
 
 /*3. FOOTER*/
 /*==================================================*/
@@ -345,6 +349,17 @@
 		text-align: center;
 	}
 }
+
+
+
+.howTo{
+	&__columns{
+		columns: 1 auto;
+		column-gap: 5px;
+	}
+}
+
+
 
 
 
