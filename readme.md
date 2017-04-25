@@ -8,7 +8,7 @@ INFO:
 --------------------------------------------------
 * name        : testWebCoder;
 * description : a test task;
-* version     : 1.0.0;
+* version     : 1.0.1;
 * author      : Pozhidaev Maxim;
 
 
@@ -36,8 +36,10 @@ SCHEDULE:
 5. columnsBlock - 3 hours;
 6. footer - 1 hour;
 7. optimisation - 2 hours;
+8. adaptive - 4 hours;
 
-total time: 40 hours;
+
+total time: 44 hours;
 
 
 
