@@ -92,45 +92,6 @@ $('.tabs__step').on('click', stepClick);
 
 
 
-$('.tabs__mixerLimit').ondragstart = function() {
-	return false;
-};
-
-
-
-
-
-$('.tabs__starsWrap .fa').hover(
-	function(){
-		let thisNum = $(this).attr('data-key');
-		$(this).removeClass('fa-star-emp');
-	
-		$('.tabs__starsWrap .fa').each(( key, val ) => {
-		
-			if( key < thisNum ){
-
-				$(val).removeClass('fa-star-emp');
-			
-			}
-			else{
-
-				$(val).addClass('fa-star-emp');
-
-			}
-
-		});
-
-	},
-	function(){
-		
-	}
-);
-
-
-
-
-
-
 // ===============================================
 // mixer
 // ===============================================
@@ -144,6 +105,45 @@ $( ".tabs__mixerWrap" ).slider({
 $('.ui-slider-handle').append('<span class="mixerLeftPart"></span><span class="mixerRightPart"></span>')
 
 
+
+
+
+
+let starsHover = function (){
+
+	$('.tabs__starsWrap .fa').hover(
+		function(){
+			let thisNum = $(this).attr('data-key');
+			$(this).removeClass('fa-star-emp');
+		
+			$('.tabs__starsWrap .fa').each(( key, val ) => {
+			
+				if( key < thisNum ){
+
+					$(val).removeClass('fa-star-emp');
+				
+				}
+				else{
+
+					$(val).addClass('fa-star-emp');
+
+				}
+
+			});
+
+		},
+		function(){
+			
+		}
+	);
+
+}
+starsHover();
+
+
+$('.tabs__starsWrap .fa').on('click', function(){
+	console.log($(this).attr('data-key'));
+});
 
 
 
