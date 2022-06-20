@@ -4,14 +4,6 @@ STRUCTURE:
 * dist - production;
 
 
-INFO:
---------------------------------------------------
-* name        : testWebCoder;
-* description : a test task;
-* version     : 1.0.1;
-* author      : Pozhidaev Maxim;
-
-
 USED:
 --------------------------------------------------
 
